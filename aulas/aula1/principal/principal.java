@@ -9,5 +9,7 @@ public class principal {
     c1.ponta = 0.5f;
     c1.tampada = false;
     c1.carga = 2;
+
+    c1.status();
   }
 }
