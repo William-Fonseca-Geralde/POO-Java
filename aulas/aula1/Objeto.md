@@ -16,4 +16,83 @@ Uma classe é o modelo que um objeto deve ser seguido, ou seja, todo os objetos 
 
 ## Criando Classes e Objetos em Java
 
-###
+### Arquivo *pricipal.java*
+
+```
+package aulas.aula1.codigo;
+
+public class principal {
+  public static void main(String[] args){
+    //instanciando um objeto
+    caneta c1 = new caneta();
+    
+    //adicionado as características
+    c1.cor = "Azul";
+    c1.modelo = "Bic";
+    c1.ponta = 0.5f;
+    c1.tampar();
+    c1.carga = 2;
+
+    //mostrando o estado desse objeto
+    c1.status();
+    c1.rabiscar();
+
+    //instanciando um novo objeto
+    caneta c2 = new caneta();
+
+    //adicionado as características
+    c2.cor = "Vermelho";
+    c2.modelo = "Bic";
+    c2.ponta = 0.4f;
+    c2.destampar();
+    c2.carga = 3;
+
+    //mostrando o estado desse objeto
+    c2.status();
+    c2.rabiscar();
+
+  }
+}
+```
+
+### Arquivo *caneta.java*
+
+```
+package aulas.aula1.codigo;
+
+public class caneta {
+  String modelo;
+  String cor;
+  float ponta;
+  int carga;
+  boolean tampada;
+
+  void status(){
+    System.out.println("Uma caneta " + this.modelo + ";");
+    System.out.println("com coloração " + this.cor + ";");
+    System.out.println("com ponta de " + this.ponta + "mm;");
+    System.out.println("com uma carga de " + this.carga + ";");
+    if (tampada == true) {
+      System.out.println("e ela está tampada;");
+    } else {
+      System.out.println("e ela não está tampada;");
+    }
+  }
+
+  void rabiscar(){
+    if (this.tampada == true) {
+      System.out.println("ERRO!! Não pode usar caneta, pois está tampada");
+    } else {
+      System.out.println("A caneta está sendo usada");
+    }
+  }
+
+  void tampar(){
+    this.tampada = true;
+  }
+
+  void destampar(){
+    this.tampada = false;
+  }
+}
+```
