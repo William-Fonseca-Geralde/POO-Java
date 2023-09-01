@@ -7,6 +7,18 @@ public class caneta {
   int carga;
   boolean tampada;
 
+  void status(){
+    System.out.println("Uma caneta " + this.modelo + ";");
+    System.out.println("com coloração " + this.cor + ";");
+    System.out.println("com ponta de " + this.ponta + "mm;");
+    System.out.println("com uma carga de " + this.carga + ";");
+    if (tampada == true) {
+      System.out.println("e ela está tampada;");
+    } else {
+      System.out.println("e ela não está tampada;");
+    }
+  }
+
   void rabiscar(){
 
   }
