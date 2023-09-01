@@ -7,9 +7,10 @@ public class principal {
     c1.cor = "Azul";
     c1.modelo = "Bic";
     c1.ponta = 0.5f;
-    c1.destampar();
+    c1.tampar();
     c1.carga = 2;
 
     c1.status();
+    c1.rabiscar();
   }
 }
