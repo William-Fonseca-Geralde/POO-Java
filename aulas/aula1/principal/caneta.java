@@ -20,7 +20,11 @@ public class caneta {
   }
 
   void rabiscar(){
-
+    if (this.tampada == true) {
+      System.out.println("ERRO!! Não pode usar caneta, pois está tampada");
+    } else {
+      System.out.println("A caneta está sendo usada");
+    }
   }
 
   void tampar(){
