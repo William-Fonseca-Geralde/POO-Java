@@ -60,10 +60,10 @@ public class controleRemoto implements controlador {
       System.out.println("Não está tocando");
     }
 
-    System.out.print("Volume:  ");
+    System.out.print("Volume: ");
 
     for (int i = 0; i < getVolume(); i+=10) {
-      System.out.print("| ");
+      System.out.print("|");
     }
   }
   
