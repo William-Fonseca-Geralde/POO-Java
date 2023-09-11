@@ -5,6 +5,8 @@ public class principal {
     controleRemoto c = new controleRemoto();
 
     c.ligar();
+    c.aumentarVolume();
     c.abrirMenu();
+    c.fecharMenu();
   }
 }
