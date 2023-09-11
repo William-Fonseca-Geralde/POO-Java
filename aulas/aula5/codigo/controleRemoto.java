@@ -47,6 +47,7 @@ public class controleRemoto implements controlador {
   
   @Override
   public void abrirMenu() {
+    System.out.println("----- MENU -----");
     if (isLigado()) {
       System.out.println("Está Ligado");
     } else {
