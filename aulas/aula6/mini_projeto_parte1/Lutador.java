@@ -115,8 +115,7 @@ public class Lutador {
   }
 
   public void status(){
-    System.out.println("Nome do Lutador: " + getNome());
-    System.out.println("Peso: " + getPeso() + "kg");
+    System.out.println("Nome do Lutador: " + getNome() + " de peso " + getCategoria());
     System.out.println("Total de de Vitórias/Derrotas/Empates: " + getVitorias() + " / " + getDerrotas() + " / " + getEmpates());
   }
 }
