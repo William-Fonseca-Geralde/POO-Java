@@ -18,10 +18,13 @@ public class Principal {
     }
     */
 
-    // for i
+    /*  for i
     for (int i = 0; i < l.length; i++) {
       l[i].apresentar();
       System.out.println();
     }
+    */
+
+    
   }
 }
