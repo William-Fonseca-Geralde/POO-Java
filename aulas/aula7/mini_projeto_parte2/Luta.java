@@ -64,12 +64,12 @@ public class Luta{
           desafiante.empatarLuta();
           break;
         case 1: //Desafiado ganhou
-          System.out.println("O " + getDesafiado() + " Ganhou de " + getDesafiante());
+          System.out.println("O " + desafiado.getNome() + " Ganhou de " + desafiante.getNome());
           desafiado.ganharLuta();
           desafiante.perderLuta();
           break;
         case 2: //Desafiante ganhou
-          System.out.println("O " + getDesafiante() + " Ganhou de " + getDesafiado());
+          System.out.println("O " + desafiante.getNome() + " Ganhou de " + desafiado.getNome());
           desafiado.perderLuta();
           desafiante.ganharLuta();
           break;
