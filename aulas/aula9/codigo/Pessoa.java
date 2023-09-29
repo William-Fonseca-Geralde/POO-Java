@@ -29,4 +29,11 @@ public class Pessoa {
   public void fazerAniver(){
     setIdade(getIdade() + 1);
   }
+  
+  @Override
+  public String toString() {
+    return "Pessoa [nome=" + nome + ", idade=" + idade + ", sexo=" + sexo + "]";
+  }
+
+  
 }
