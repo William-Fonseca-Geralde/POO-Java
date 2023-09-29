@@ -3,9 +3,9 @@ package aulas.aula8;
 public class Pessoa {
   private String nome;
   private int idade;
-  private char sexo;
+  private String sexo;
 
-  public Pessoa(String nome, int idade, char sexo) {
+  public Pessoa(String nome, int idade, String sexo) {
     this.nome = nome;
     this.idade = idade;
     this.sexo = sexo;
@@ -25,10 +25,10 @@ public class Pessoa {
     this.idade = idade;
   }
 
-  public char getSexo() {
+  public String getSexo() {
     return sexo;
   }
-  public void setSexo(char sexo) {
+  public void setSexo(String sexo) {
     this.sexo = sexo;
   }
 

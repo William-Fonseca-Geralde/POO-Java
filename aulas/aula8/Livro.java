@@ -16,7 +16,7 @@ public class Livro implements Publicacao{
   }
 
   public void detalhes(){
-    System.out.println("A(O) " + leitor.getNome() + "está lendo:");
+    System.out.println("A(O) " + leitor.getNome() + " está lendo:");
     System.out.println(getTitulo() + " e está na página " + getPaginaAtual() + "/" + getTotalPaginas());
   }
 
@@ -74,7 +74,11 @@ public class Livro implements Publicacao{
 
   @Override
   public void folhear(int pag) {
-    setPaginaAtual(pag);
+    if (pag > getTotalPaginas()) {
+      System.out.println("Ultrapassou a quantidade de páginas");
+    } else {
+      setPaginaAtual(pag);
+    }
   }
 
   @Override
